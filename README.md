@@ -3,6 +3,7 @@
 - Expense Tracker is a responsive web application built using HTML, CSS, and JavaScript that helps users manage their personal finances. Users can set a budget, add expenses with categories, track total spending, and view the remaining balance. Data is stored locally using LocalStorage.
 
 📌Demo
+- click here to view the Demo: https://anjalidivi.github.io/Expense-Tracker/
 
 ✨ Features
 - **Onboarding Experience** —Greets each user by name 
@@ -30,7 +31,6 @@ Clone the repository or download the files
 
 👩‍💻 Author
 - Anjali Divi
-- Second Year CSE Student
 
 ⭐ If you like this project
 - Give it a ⭐ on GitHub!
