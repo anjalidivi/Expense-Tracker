@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker — Dashboard</title>
+<link rel="stylesheet" href="tracker.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <div class="brand">Expense Tracker — Welcome, <span id="user-name"></span> 💰</div>
+  <button id="theme-toggle">🌙</button>
+</div>
+
+<div class="container">
+  <div class="input-form">
+    <input id="date-input" type="date">
+    <input id="amount-input" placeholder="Amount">
+    <select id="type-select">
+      <option value="Income">Income</option>
+      <option value="Expense">Expense</option>
+    </select>
+    <button id="add-button">+</button>
+  </div>
+
+  <div class="cards">
+    <div class="card"><h3>Total Income</h3><p id="income-amount">₹ 0</p></div>
+    <div class="card"><h3>Total Expense</h3><p id="expense-amount">₹ 0</p></div>
+    <div class="card"><h3>Balance</h3><p id="balance-amount">₹ 0</p></div>
+  </div>
+
+  <div class="charts"><canvas id="pieChart"></canvas></div>
+
+  <table class="transaction-table">
+    <thead><tr>
+      <th>Amount</th><th>Type</th><th>Date</th><th>Action</th>
+    </tr></thead>
+    <tbody id="transactions-body"></tbody>
+  </table>
+</div>
+
+<script src="tracker.js"></script>
+</body>
+</html>

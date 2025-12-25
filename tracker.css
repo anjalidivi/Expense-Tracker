@@ -1,0 +1,45 @@
+:root {
+  --primary-color: skyblue;
+  --text-color: #333;
+  --card-bg: #e1ecfd;
+}
+body {
+  margin:0; font-family:system-ui,sans-serif; background:#fafafa;
+}
+.header {
+  background:var(--primary-color); color:white;
+  padding:14px; font-size:22px;
+}
+.container {
+  padding:18px;
+}
+.input-form {
+  display:flex; gap:10px; margin-bottom:16px;
+}
+.input-form input, .input-form select {
+  padding:10px; flex:1; border:1px solid #ccc; border-radius:8px;
+}
+#add-button {
+  padding:0 14px; background:var(--primary-color);
+  color:white; border:none; border-radius:8px; cursor:pointer;
+  font-size:22px;
+}
+.cards {
+  display:flex; gap:12px; margin-bottom:18px;
+}
+.card {
+  flex:1; background:var(--card-bg);
+  padding:12px; border-radius:10px; text-align:center;
+}
+.card h3 { margin:0; font-size:16px; }
+.card p { font-size:22px; margin:8px 0 0; }
+
+.charts { max-width:450px; margin:auto 0 20px; }
+.transaction-table {
+  width:100%; border-collapse:collapse;
+}
+.transaction-table th, .transaction-table td {
+  padding:12px; border-bottom:1px solid #ddd;
+}
+button.edit-btn { background:#ffd166; border:none; padding:6px 10px; border-radius:6px; }
+button.delete-btn { background:#ff6b6b; color:white; border:none; padding:6px 10px; border-radius:6px; }

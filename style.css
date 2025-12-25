@@ -1,0 +1,47 @@
+:root {
+  --primary-color: skyblue;
+  --text-color: #333;
+  --button-bg: skyblue;
+  --button-text: white;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+}
+.parent {
+  position: relative; height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+  padding: 20px; box-sizing: border-box;
+}
+.solid-circle {
+  height: 750px; width: 750px;
+  background: var(--primary-color);
+  border-radius: 50%; position: absolute;
+  right: -150px; top: -120px; z-index: 1;
+}
+.header-home {
+  position: absolute; top: 8px; width: 100%;
+  padding: 10px 25px; display: flex;
+}
+.brand {
+  font-size: 22px; font-weight: bold; color: var(--text-color);
+}
+.main-content {
+  z-index: 2; text-align: center;
+  padding: 25px; background: white;
+  border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+#Name {
+  color: var(--primary-color);
+  font-size: 90px; margin: 10px 0;
+}
+.form-floating input {
+  width: 100%; padding: 10px; border-radius: 8px;
+  border: 1px solid #ccc;
+}
+#login-button {
+  margin-top: 18px; background: var(--button-bg);
+  color: var(--button-text); padding: 12px 25px;
+  border: none; border-radius: 8px; cursor: pointer;
+}
