@@ -5,7 +5,7 @@ Expense Tracker is a responsive web application built using HTML, CSS, and JavaS
 📌Demo
 
 ✨ Features
-- **Personalized Onboarding** — Welcomes users by name  
+- **Onboarding Experience** —Greets each user by name 
 - **Real-Time Dashboard** — Displays total income, expenses, and balance dynamically  
 - **Interactive Charts** — Visualizes financial data using Chart.js
 - **Responsive Design** — Optimized for desktop, tablet, and mobile  
