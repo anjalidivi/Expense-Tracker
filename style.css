@@ -1,47 +1,85 @@
 :root {
   --primary-color: skyblue;
   --text-color: #333;
-  --button-bg: skyblue;
+  --bg-light: #fafafa;
+  --bg-dark: #0f0f24;
+  --card-light: #fff;
+  --card-dark: #1c1c3a;
+  --button-bg-light: skyblue;
+  --button-bg-dark: #6666ff;
   --button-text: white;
 }
+
 body {
   font-family: system-ui, sans-serif;
-  background: #f8f8f8;
   margin: 0;
+  background: var(--bg-light);
+  color: var(--text-color);
+  transition: 0.3s ease;
 }
+
+.dark {
+  background: var(--bg-dark);
+  color: white;
+}
+
+/* Landing */
 .parent {
   position: relative; height: 100vh;
   display: flex; justify-content: center; align-items: center;
-  padding: 20px; box-sizing: border-box;
 }
+
 .solid-circle {
   height: 750px; width: 750px;
   background: var(--primary-color);
-  border-radius: 50%; position: absolute;
-  right: -150px; top: -120px; z-index: 1;
+  border-radius: 50%;
+  position: absolute; right: -150px; top: -120px;
 }
+
 .header-home {
-  position: absolute; top: 8px; width: 100%;
-  padding: 10px 25px; display: flex;
+  position: absolute; top: 10px; width: 100%;
+  display: flex; justify-content: space-between; padding: 10px 25px;
 }
+
 .brand {
-  font-size: 22px; font-weight: bold; color: var(--text-color);
+  font-size: 22px; font-weight: bold;
 }
+
 .main-content {
   z-index: 2; text-align: center;
-  padding: 25px; background: white;
-  border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  padding: 30px; background: var(--card-light);
+  border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+
+.dark .main-content {
+  background: var(--card-dark);
+}
+
 #Name {
-  color: var(--primary-color);
-  font-size: 90px; margin: 10px 0;
+  color: var(--primary-color); font-size: 90px;
 }
+
 .form-floating input {
   width: 100%; padding: 10px; border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+button {
+  cursor: pointer;
+  border: none; border-radius: 8px;
+  padding: 10px 18px;
+  color: var(--button-text);
+}
+
 #login-button {
-  margin-top: 18px; background: var(--button-bg);
-  color: var(--button-text); padding: 12px 25px;
-  border: none; border-radius: 8px; cursor: pointer;
+  background: var(--button-bg-light);
+}
+
+.dark #login-button {
+  background: var(--button-bg-dark);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #Name { font-size: 64px; }
 }
