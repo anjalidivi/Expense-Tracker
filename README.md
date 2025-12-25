@@ -1,6 +1,6 @@
 💰 Expense Tracker
 - 📌 Description
-Expense Tracker is a responsive web application built using HTML, CSS, and JavaScript that helps users manage their personal finances. Users can set a budget, add expenses with categories, track total spending, and view the remaining balance. Data is stored locally using LocalStorage.
+- Expense Tracker is a responsive web application built using HTML, CSS, and JavaScript that helps users manage their personal finances. Users can set a budget, add expenses with categories, track total spending, and view the remaining balance. Data is stored locally using LocalStorage.
 
 📌Demo
 
